@@ -1,0 +1,310 @@
+
+*{
+    font-family: 'Oxygen', sans-serif;
+    /* font-family: 'Space Mono', monospace; */
+    margin: 0; 
+   padding: 0; 
+}
+
+
+
+/* 
+Navigation Bar 
+*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center; 
+    align-items: center; 
+    padding: 1%
+}
+
+.log {
+    display: flex;
+}
+
+
+.navlist {
+    display: flex; 
+    list-style: none;
+    align-items: center;
+}
+nav li {
+    padding: 0.5em 0.5em;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+
+.log {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.log > p {
+    display: inline;
+    font-weight: bold;
+    color: var(--dark-grey);
+}
+.log > span {
+    font-weight: medium;
+    color: var(--light-grey);
+
+}
+
+@media only screen and (max-width: 600px) {
+    .navlist {
+    display: none;
+    }
+    .log {
+        display: none;    
+    }
+    .mobile.nav {
+        display: inline; 
+        white-space: 2px;
+    }
+    
+  }
+  
+
+.mobile.nav {
+    display: none;
+}
+
+/*
+Hero section
+*/
+
+.hero-container {
+    background-color: rgb(153, 154, 142);
+    display: flex;
+    padding: 5% 3%;
+
+}
+
+.hero-container button {
+    background-color: var(--dark-grey);
+    width: 100%;
+    height: 3rem;
+    cursor: pointer;
+    color: white;
+}
+
+.hero-left img {
+    width: 85;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 1%;
+    padding: 0 2%;
+}
+
+.hero-right > h1, h4 {
+    margin-top: 5%;
+    /* padding: 5%; */
+    color: #404040;
+
+}
+
+.hero-right a {
+    /* padding: 5%; */
+    margin-top: 5%;
+    color: white;
+    background-color: #404040;
+    text-decoration: none;
+}
+
+/* News */
+.news-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-left: 24px;
+}
+
+/**** News left ****/
+.news-left {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 32px 24px;
+}
+.news-left>h1 {
+    font-family: sans-serif;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    /* padding: 24px;
+    margin: 24px; */
+}
+/**** News Right ****/
+.news-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+.news-right img {
+    width: 10rem;
+}
+/* .news-right h4 {
+    font-size: 140%;
+} */
+.news-right button {
+    background: none;
+    border: 0;
+}
+.news-right a {
+    text-decoration: none;
+}
+
+.orientation,
+    .campus,
+    .guest {
+        display: flex;
+        border: 1px rgb(184, 10, 10);
+}
+
+.orientation-info,
+.campus-info,
+.guest-info {
+    padding: 0 5%;
+    margin-top: 4%;
+    font-size: 80%;
+}
+
+.sl-container {
+    padding: 5%;
+
+}
+
+
+.sl-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+
+}
+.sl-grid-wrapper img {
+    width: 100%;
+    
+
+}
+ .sl-mobile {
+    display: none;
+
+ }
+  /*this is THesis section*/
+
+  .urban-video > video {
+    width: 100%;
+}
+.thesis-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 2%;
+    grid-gap: 2%;
+}
+
+.fisma, .now-and-then {
+    display: flex;
+}
+
+footer, ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+a {
+    list-style: none;
+    padding: 5%;
+}
+@media only screen and (max-width: 600px) {
+    .hero-right {
+    display: flex;}
+
+    .news-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding-left: 24px;
+    }
+    /* .news-container, .sl-container {
+         grid-template-columns: 3fr 2fr;
+        color: #404040;
+        width: 100%;
+       
+    } */
+    /**** News left ****/
+  
+    .news-left {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 32px 24px;
+    }
+    .news-left>h1 {
+        font-family: sans-serif;
+        margin-top: 32px;
+        margin-bottom: 24px;
+        /* padding: 24px;
+        margin: 24px; */
+    }
+    /**** News Right ****/
+    .news-right {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+    }
+    .news-right img {
+        width: 10rem;
+    }
+    /* .news-right h4 {
+        font-size: 140%;
+    } */
+    .news-right button {
+        background: none;
+        border: 0;
+    }
+    .news-right a {
+        text-decoration: none;
+    }
+    .orientation,
+    .campus,
+    .guest {
+        display: flex;
+        border: 1px rgb(184, 10, 10);
+    }
+    .orientation-info,
+    .campus-info,
+    .guest-info {
+        padding: 0 5%;
+        margin-top: 4%;
+        font-size: 80%;
+    }
+   .sl-mobile {
+    display: flex;
+    flex-direction: column;
+   } 
+
+   .sl-grid-wrapper {
+    display: none;
+   }
+
+}
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
